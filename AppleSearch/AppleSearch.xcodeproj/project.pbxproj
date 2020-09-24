@@ -16,6 +16,8 @@
 		C34CBD32251D08420019D188 /* AppItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34CBD31251D08420019D188 /* AppItem.swift */; };
 		C34CBD39251D0D4B0019D188 /* AppleStoreItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34CBD38251D0D4B0019D188 /* AppleStoreItemController.swift */; };
 		C34CBD3E251D10E60019D188 /* AppleStoreError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34CBD3D251D10E60019D188 /* AppleStoreError.swift */; };
+		C34CBD47251D32510019D188 /* ItemSearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34CBD46251D32510019D188 /* ItemSearchTableViewController.swift */; };
+		C34CBD4A251D33B40019D188 /* EntityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34CBD49251D33B40019D188 /* EntityTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		C34CBD31251D08420019D188 /* AppItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppItem.swift; sourceTree = "<group>"; };
 		C34CBD38251D0D4B0019D188 /* AppleStoreItemController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleStoreItemController.swift; sourceTree = "<group>"; };
 		C34CBD3D251D10E60019D188 /* AppleStoreError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleStoreError.swift; sourceTree = "<group>"; };
+		C34CBD46251D32510019D188 /* ItemSearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemSearchTableViewController.swift; sourceTree = "<group>"; };
+		C34CBD49251D33B40019D188 /* EntityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +125,7 @@
 		C34CBD29251D03670019D188 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				C34CBD49251D33B40019D188 /* EntityTableViewCell.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -136,6 +141,7 @@
 		C34CBD2B251D03760019D188 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				C34CBD46251D32510019D188 /* ItemSearchTableViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -222,8 +228,10 @@
 				C34CBD39251D0D4B0019D188 /* AppleStoreItemController.swift in Sources */,
 				C34CBD2E251D03A10019D188 /* MusicItem.swift in Sources */,
 				C34CBD0D251CFDC10019D188 /* AppDelegate.swift in Sources */,
+				C34CBD4A251D33B40019D188 /* EntityTableViewCell.swift in Sources */,
 				C34CBD0F251CFDC10019D188 /* SceneDelegate.swift in Sources */,
 				C34CBD3E251D10E60019D188 /* AppleStoreError.swift in Sources */,
+				C34CBD47251D32510019D188 /* ItemSearchTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

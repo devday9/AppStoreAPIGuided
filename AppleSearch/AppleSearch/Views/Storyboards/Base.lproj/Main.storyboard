@@ -10,7 +10,7 @@
         <!--Root View Controller-->
         <scene sceneID="yet-Hw-edP">
             <objects>
-                <tableViewController id="gjX-3u-4Mf" sceneMemberID="viewController">
+                <tableViewController id="gjX-3u-4Mf" customClass="ItemSearchTableViewController" customModule="AppleSearch" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="yzg-A9-fWj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -32,11 +32,14 @@
                                                 <segment title="Music"/>
                                                 <segment title="Apps"/>
                                             </segments>
+                                            <connections>
+                                                <action selector="segmentedControlValueChanged:" destination="gjX-3u-4Mf" eventType="valueChanged" id="cit-B8-SSD"/>
+                                            </connections>
                                         </segmentedControl>
                                     </subviews>
                                 </stackView>
                             </subviews>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <color key="backgroundColor" systemColor="systemTealColor"/>
                             <constraints>
                                 <constraint firstAttribute="trailing" secondItem="Bjb-7H-MGL" secondAttribute="trailing" id="L7t-XE-zFd"/>
                                 <constraint firstAttribute="bottom" secondItem="Bjb-7H-MGL" secondAttribute="bottom" id="Ldy-bJ-WXr"/>
@@ -45,7 +48,7 @@
                             </constraints>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="54j-7a-v60">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="entityCell" id="54j-7a-v60" customClass="EntityTableViewCell" customModule="AppleSearch" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="154" width="414" height="175"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="54j-7a-v60" id="yVj-fA-8FI">
@@ -87,6 +90,11 @@
                                         <constraint firstItem="mSd-NW-o7n" firstAttribute="top" secondItem="yVj-fA-8FI" secondAttribute="topMargin" constant="8" id="wga-si-ZQS"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="artworkImageView" destination="NVG-bn-tE3" id="hwR-tA-Gmd"/>
+                                    <outlet property="descriptionLabel" destination="azX-b8-5YJ" id="R7p-zP-HfX"/>
+                                    <outlet property="trackNameLabel" destination="2nP-s9-PCS" id="qEy-bW-IYN"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -95,6 +103,10 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Root View Controller" id="3yt-9W-s4O"/>
+                    <connections>
+                        <outlet property="entitySearchBar" destination="ko4-bE-gXA" id="Uhd-wI-TzH"/>
+                        <outlet property="entitySegmentedControl" destination="gKl-3w-fUw" id="0hY-Po-d12"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fzF-lD-9sa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -104,6 +116,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
